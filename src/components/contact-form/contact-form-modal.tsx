@@ -83,14 +83,14 @@ export default function ContactFormModal({
               onClick={() => setShowModal(false)}
             />
           </Transition.Child>
-          <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+          <div className="fixed inset-0 z-[9999] flex items-start justify-center pt-2 sm:pt-6">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0 top-full"
-              enterTo="opacity-100 top-12"
+              enterTo="opacity-100 top-6"
               leave="ease-in duration-200"
-              leaveFrom="opacity-100 top-10"
+              leaveFrom="opacity-100 top-6"
               leaveTo="opacity-0 top-full"
             >
               <Dialog.Panel
